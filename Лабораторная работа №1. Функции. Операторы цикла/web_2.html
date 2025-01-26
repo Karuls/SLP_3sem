@@ -1,0 +1,105 @@
+<html>
+<head>
+    <title>Лабораторная 2</title>
+<script type='text/javascript'> 
+
+function fun1() {
+alert('Вас приветствует учебный центр');
+user_name = prompt("Введите имя");
+ alert('Добро пожаловать на наши курсы '+ user_name + "!"); 
+ if(confirm('Хотите стать Web-дизайнером?') == true){
+    alert("Учите стили CSS и JavaScript!");
+ }
+ else alert("Упускаете время!");
+}
+
+function fun2() {
+    console.log(10+5);
+    console.log("10"+ "5");
+    console.log("10"+ "5");
+    console.log( 22+ "5");
+    console.log("22"+ 5);
+     alert("Результатом сложения строки и числа всегда будет ... ");
+}
+function fun3() {
+    x = 666; y = 14;
+f1 = (35*y- 25*x)/5+232;
+f2 = 8*y/x+5*x/y - 43*6;
+alert("Выражение 1 больше второго в "+ f1/f2+" раз");
+alert("остаток от деления значения одного выражения на значение другого = "+ f1%f2);
+document.write("Выражение 1 больше второго в "+ f1/f2+"раз")
+}
+ function fun4() {
+    var x = prompt("Введите число", 10);
+if( x < 20 && x!=15 && x%5==0 || x > 40 && x !=15 && x%5==0){
+    alert("Правильное значение");
+}
+else alert("Не правильное значение")
+ }
+function fun5() {
+    let a = Number(prompt("Введите число A:"));
+let b = Number(prompt("Введите число B:"));
+
+if (a > b) {
+  document.write("A больше B");
+} else if (a < b) {
+  document.write("A меньше B");
+} else {
+  document.write("A равно B");
+}
+
+//document.write(a > b ? "A больше B" : a < b ? "A меньше B" : "A равно B");
+}
+
+var fun6 = () => {
+    const day_numder = prompt("Введите номер дня в неделе");
+    switch(day_numder){
+        case "1": {alert("Сегодня Понедельник!"); break;}
+        case "2": {alert("Сегодня Вторник!");break;}
+        case "3": {alert("Сегодня Среда!");break;}
+        case "4": {alert("Сегодня Четверг!");break;}
+        case "5": {alert("Сегодня Пятница!");break;}
+        case "6": {alert("Сегодня Суббота!");break;}
+        case "7": {alert("Сегодня Воскресенье!");break;}
+
+    }
+}
+    function fun7(){
+        ten = 31;
+        two = 11111;
+        eight = 37
+        var sixteen = "1F";
+    }
+
+    function laba2(){
+        
+        let a = Number(prompt("Введите число A:"));
+        let b = Number(prompt("Введите число B:"));
+
+        for(i = 1; i <= a; i++){
+            for(j = 1; j <= b; j++){
+            document.write(i*j+'\n')
+            }
+            document.write('\t ')
+        }
+ 
+    }
+
+ 
+</script>
+</head>
+<body>
+    
+<input type='button' value='Задание 1' onclick='fun1()' />
+<input type='button' value='Задание 2' onclick='fun2()' />
+<input type='button' value='Задание 3' onclick='fun3()' />
+<input type='button' value='Задание 4' onclick='fun4()' />
+<input type='button' value='Задание 5' onclick='fun5()' />
+<input type='button' value='Задание 6' onclick='fun6()' />
+<input type='button' value='Задание 7' onclick='fun7()' /><br><br>
+
+
+
+
+</body>
+</html>

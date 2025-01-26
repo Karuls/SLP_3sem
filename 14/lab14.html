@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Судоку</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        #controls {
+            margin-bottom: 20px;
+        }
+
+        button {
+            margin: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #sudokuBoard {
+            display: grid;
+            grid-template-columns: repeat(9, 40px);
+            gap: 2px;
+            margin-top: 20px;
+        }
+
+        .cell {
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            font-size: 20px;
+            border: 1px solid #999;
+            background-color: white;
+            border-radius: 5px;
+        }
+
+        .highlight {
+            background-color: red;
+            color: white;
+        }
+
+        .valid {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Судоку</h1>
+    <div id="controls">
+        <button onclick="generateNewBoard()">Новое игровое поле</button>
+        <button onclick="checkBoard()">Проверить</button>
+        <button onclick="generateCompleteBoard()">Правильное игровое поле</button>
+    </div>
+    <div id="sudokuBoard"></div>
+
+    <script src="lab14.js"></script>
+</body>
+</html>
